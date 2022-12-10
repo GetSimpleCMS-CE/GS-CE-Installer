@@ -1,7 +1,7 @@
 # GS-CE-Installer
 Single file script to install or update GetSimpleCMS in 1 click
 
-Upload gsce-installer.php to the root of the server with FTP.
+Upload gsce-installer.php to the root of the server with FTP and select prefered version to load.
 
 - Copies and extracts the last version or patch of GetSimpleCMS-CE then run the setup
 - Downloads direct from the GS or CE repository to your server.
