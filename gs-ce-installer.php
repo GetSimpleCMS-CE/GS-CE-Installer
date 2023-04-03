@@ -3,7 +3,7 @@
 	/* **********
 	* Plugin Name: gs-ce-installer
 	* Description: Single file script to install or update GetSimpleCMS in 1 click.
-	* Version: 2.0
+	* Version: 2.1
 	* Author: Islander / Risingisland
 	* Author URI: https://github.com/risingisland
 	********** */
@@ -32,20 +32,14 @@
 		public static $packageInfo = [
 			'GS-CE' => [
 				'tree' => 'GetSimpleCMS-CE ',
-				'name' => 'Get-Simple CMS (v3.3.18)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.18/archive/refs/heads/main.zip',
+				'name' => 'Get-Simple CMS (v3.3.18.1)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.18.1/archive/refs/heads/main.zip',
 				'location' => 'admin/install.php'
 			],
 			'Patch2' => [
 				'tree' => 'Patch Only',
-				'name' => 'Get-Simple CMS (v3.3.18)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.18/archive/refs/heads/main.zip',
-				'location' => 'admin/'
-			],
-			'Patch1' => [
-				'tree' => 'Patch Only',
-				'name' => 'Get-Simple CMS (v3.3.17)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.17/archive/refs/heads/main.zip',
+				'name' => 'Get-Simple CMS (v3.3.18.1)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.18.1/archive/refs/heads/main.zip',
 				'location' => 'admin/'
 			],
 			'GS-Original' => [
@@ -307,14 +301,13 @@
 			<p>Choose a new installation or update a previouse one.</p>
 			<hr class="style-two">
 
-			<h3>GetSimpleCMS-CE v3.3.18:</h3>
-			<p>Full Package — You all know him and love him, now he works with php8.1 too.</p>
+			<h3>GetSimpleCMS-CE v3.3.18.1:</h3>
+			<p>Full Package — You all know him and love him, now he works with php8.2 too.</p>
 
 			<h3>Patch Only:</h3>
 			<p>These will update your current v3.3.16 installations, over-writing existing files to add 8.x compatability.</p>
 			<ul>
-				<li>v3.3.18: <code>Adds <u>PHP 7.4 - 8.1</u> compatability to current v3.3.16, as well as additional fixes.</code></li>
-				<li>v3.3.17: <code>Adds <u>PHP 7.2 - 8.0.13</u> compatability to current v3.3.16, as well as additional fixes.</code></li>
+				<li>v3.3.18.1: <code>Adds <u>PHP 7.4 - 8.2</u> compatability to current v3.3.16, as well as additional fixes.</code></li>
 			</ul>
 			
 			<blockquote>
@@ -447,7 +440,7 @@
 			
 			<hr class="style-two">
 			
-			<h3>GetSimpleCMS CE  v3.3.17-3.3.18:</h3>
+			<h3>GetSimpleCMS CE 3.3.18.1:</h3>
 			<p>Although these installations may work on previous versions of PHP, it is recommended to be using a minimum version of php7.2 and preferably php7.4+.</p>
 			
 			<h3>GetSimpleCMS (Legacy)  v3.3.16:</h3>
