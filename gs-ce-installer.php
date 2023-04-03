@@ -275,7 +275,7 @@
 			<a href="#phpinfo">PHP-Info</a>
 			<a href="#help">Help</a>
 		</nav>
-		<a href="https://github.com/GetSimpleCMS-CE?tab=repositories" class="git-button">GitHub </a>
+		<a href="https://getsimplecms-ce-plugins.github.io/" target="_blank" class="git-button">Plugins </a>
 		
     </header>
 	
