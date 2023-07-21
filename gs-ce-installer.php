@@ -32,14 +32,14 @@
 		public static $packageInfo = [
 			'GS-CE' => [
 				'tree' => 'GetSimpleCMS-CE ',
-				'name' => 'Get-Simple CMS (v3.3.18.1)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.18.1/archive/refs/heads/main.zip',
+				'name' => 'Get-Simple CMS (v3.3.19)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.19/archive/refs/tags/v3.3.19.zip',
 				'location' => 'admin/install.php'
 			],
 			'Patch2' => [
 				'tree' => 'Patch Only',
-				'name' => 'Get-Simple CMS (v3.3.18.1)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.18.1/archive/refs/heads/main.zip',
+				'name' => 'Get-Simple CMS (v3.3.19)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.19/archive/refs/heads/main.zip',
 				'location' => 'admin/'
 			],
 			'GS-Original' => [
@@ -301,17 +301,20 @@
 			<p>Choose a new installation or update a previouse one.</p>
 			<hr class="style-two">
 
-			<h3>GetSimpleCMS-CE v3.3.18.1:</h3>
+			<h3>GetSimpleCMS-CE v3.3.19:</h3>
 			<p>Full Package — You all know him and love him, now he works with php8.2 too.</p>
 
 			<h3>Patch Only:</h3>
-			<p>These will update your current v3.3.16 installations, over-writing existing files to add 8.x compatability.</p>
+			<p>This will update your current installation, over-writing existing files.</p>
 			<ul>
-				<li>v3.3.18.1: <code>Adds <u>PHP 7.4 - 8.2</u> compatability to current v3.3.16, as well as additional fixes.</code></li>
+				<li>v3.3.19: <code>Adds <u>PHP 7.4 - 8.2</u> compatability to current v3.3.16, as well as additional fixes and many new features.</code></li>
 			</ul>
 			
 			<blockquote>
 				<p><em>You should <b>back up your files</b> and store them in a safe place.<br> Just in case something goes wrong, you can restore the backup and start again. </em></p>
+				
+				<p>Updating from versions prior to v3.3.19 will need to manually update your <em>gsconfig.php</em> file with the following:</p>
+				
 				<p><em>Some plugins, themes, language packs may be incompatible with the new version and may need to be updated. It’s recommended to check for related announcements from their authors. </em></p>
 			</blockquote>
 
