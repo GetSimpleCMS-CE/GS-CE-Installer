@@ -261,6 +261,14 @@
 			
 			.dot,.label{border-radius:4px}table{width:100%;padding:10px;border-radius:3px}table thead th{text-align:left;padding:5px 0;border:0!important}table tbody td{padding:5px 0}table tbody td:last-child,table thead th:last-child{text-align:right}.label{padding:3px 10px;color:#fff}.label.label-success{background:#4ac700}.label.label-warning{background:#dc2020}#loader{position:relative;width:44px;height:8px;margin:5px auto;padding-top:35px;padding-bottom:30px}.dot{display:inline-block;width:8px;height:8px;background:#ccc;position:absolute}.dot_1{animation:1.5s linear infinite animateDot1;left:12px;background:#e579b8}.dot_2{animation:1.5s linear .5s infinite animateDot2;left:24px}.dot_3{animation:1.5s linear infinite animateDot3;left:12px}.dot_4{animation:1.5s linear .5s infinite animateDot4;left:24px}.logo{margin-bottom:35px;margin-top:20px;display:block}.logo img{margin:0 auto;display:block}@keyframes animateDot1{0%{transform:rotate(0) translateX(-12px)}25%,75%{transform:rotate(180deg) translateX(-12px)}100%{transform:rotate(360deg) translateX(-12px)}}@keyframes animateDot2{0%{transform:rotate(0) translateX(-12px)}25%,75%{transform:rotate(-180deg) translateX(-12px)}100%{transform:rotate(-360deg) translateX(-12px)}}@keyframes animateDot3{0%{transform:rotate(0) translateX(12px)}25%,75%{transform:rotate(180deg) translateX(12px)}100%{transform:rotate(360deg) translateX(12px)}}@keyframes animateDot4{0%{transform:rotate(0) translateX(12px)}25%,75%{transform:rotate(-180deg) translateX(12px)}100%{transform:rotate(-360deg) translateX(12px)}}
 		</style>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-coy.min.css" integrity="sha512-XcB0I04SuOVkb6ewfVz0qMhU5QADIiFBFxPRRNWZUANF1W5onx8GlbHYYIivw3gXrTuZfu+1gAG8HvvKQG3oGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-php.min.js" integrity="sha512-6UGCfZS8v5U+CkSBhDy+0cA3hHrcEIlIy2++BAjetYt+pnKGWGzcn+Pynk41SIiyV2Oj0IBOLqWCKS3Oa+v/Aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-php-extras.min.js" integrity="sha512-slk6u22Z59/OgxTpC6/+BRJXb8f97I04A2KbD2nmvdrkBzequmHsf3Tm6n4iWW+Scf1j1f3qe+xj3DWtAgCXfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 	</head>
 	
@@ -297,28 +305,63 @@
 			
 			<p>&nbsp </p><hr class="style-two">
 			
-			<p>One file Installer / Updater for GetSimeple CMS.</p>
+			<p><strong>One file Installer / Updater for GetSimeple CMS.</strong></p>
 			<p>Choose a new installation or update a previouse one.</p>
 			<hr class="style-two">
 
-			<h3>GetSimpleCMS-CE v3.3.19:</h3>
+			<h3 style="color:#579ACD">GetSimpleCMS-CE v3.3.19:</h3>
 			<p>Full Package — You all know him and love him, now he works with php8.2 too.</p>
 
-			<h3>Patch Only:</h3>
-			<p>This will update your current installation, over-writing existing files.</p>
+			<h3 style="color:#579ACD">Patch Only:</h3>
+			<p>This will update your current installation, <u>over-writing existing files</u>.</p>
+			<p>v3.3.19: <code>Adds PHP 7.4 - 8.2 compatability to current v3.3.16, as well as additional fixes and many new features.</code></p>
+			
 			<ul>
-				<li>v3.3.19: <code>Adds <u>PHP 7.4 - 8.2</u> compatability to current v3.3.16, as well as additional fixes and many new features.</code></li>
+				<li><p><em>You should <b><u>back up your files</u></b> and store them in a safe place.<br> Just in case something goes wrong, you can restore the backup and start again. </em></p></li>
+				<li><p>Updating from versions prior to v3.3.19 will need to manually update your <em>gsconfig.php</em> file with the following:</p>
+				<xblockquote>
+				<p>Add:</p>
+				<code class="language-php">
+# Sort admin page list by title or menu
+define('GSSORTPAGELISTBY','menu');
+				</code>
+				<p>Replace:</p>
+				<code class="language-php">
+# WYSIWYG editor height (default 500)
+# define('GSEDITORHEIGHT', '400');
+
+# WYSIWYG toolbars (advanced, basic or [custom config]) 
+# define('GSEDITORTOOL', 'advanced');
+
+# WYSIWYG editor language (default en)
+# define('GSEDITORLANG', 'en');
+
+# WYSIWYG Editor Options
+# define('GSEDITOROPTIONS', '');
+				</code>
+				<p>With:</p>
+				<code class="language-php">
+# WYSIWYG editor height (default 500)
+# define('GSEDITORHEIGHT', '400');
+
+# WYSIWYG editor language (default en)
+# define('GSEDITORLANG', 'en');
+
+# WYSIWYG toolbars (advanced, basic, advanced, island, CEbar or [custom config])
+define('GSEDITORTOOL', "CEbar");
+
+# WYSIWYG Editor Options
+define('GSEDITOROPTIONS', '
+extraPlugins:"fontawesome5,youtube,codemirror,cmsgrid,colorbutton,oembed,simplebutton,spacingsliders",
+disableNativeSpellChecker : false,
+forcePasteAsPlainText : true
+');
+				</code>
+				</blockquote></li>
+				<li><p><em>Some plugins, themes, language packs may be incompatible with the new version and may need to be updated. It’s recommended to check for related announcements from their authors. </em></p></li>
 			</ul>
 			
-			<blockquote>
-				<p><em>You should <b>back up your files</b> and store them in a safe place.<br> Just in case something goes wrong, you can restore the backup and start again. </em></p>
-				
-				<p>Updating from versions prior to v3.3.19 will need to manually update your <em>gsconfig.php</em> file with the following:</p>
-				
-				<p><em>Some plugins, themes, language packs may be incompatible with the new version and may need to be updated. It’s recommended to check for related announcements from their authors. </em></p>
-			</blockquote>
-
-			<h3>GetSimpleCMS (Legacy)  v3.3.16:</h3>
+			<h3 style="color:#579ACD">GetSimpleCMS (Legacy)  v3.3.16:</h3>
 			<p>Full Package — Vanilla isstallation directly from the original "https://github.com/GetSimpleCMS/" repo.</p>
 			
 			<?php echo $footer; ?>
