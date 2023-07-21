@@ -36,10 +36,22 @@
 				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.19/archive/refs/tags/v3.3.19.zip',
 				'location' => 'admin/install.php'
 			],
-			'Patch2' => [
+			[
+				'tree' => 'GetSimpleCMS-CE ',
+				'name' => 'Get-Simple CMS (v3.3.18.1)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.18.1/archive/refs/heads/main.zip',
+				'location' => 'admin/install.php'
+			],
+			'Patch' => [
 				'tree' => 'Patch Only',
 				'name' => 'Get-Simple CMS (v3.3.19)',
 				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.19/archive/refs/heads/main.zip',
+				'location' => 'admin/'
+			],
+			[
+				'tree' => 'Patch Only',
+				'name' => 'Get-Simple CMS (v3.3.18.1)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.18.1/archive/refs/heads/main.zip',
 				'location' => 'admin/'
 			],
 			'GS-Original' => [
@@ -310,11 +322,14 @@
 			<hr class="style-two">
 
 			<h3 style="color:#579ACD">GetSimpleCMS-CE v3.3.19:</h3>
-			<p>Full Package — You all know him and love him, now he works with php8.2 too.</p>
+			<p><b>Full Package</b> — Not only compatible with php 7.4 - 8.2 but also many new features, responsive admin and base theme, as well as Massive Admin installed by default, offering many new feature and options by default. (user management, theme selection, etc.)</p>
 
-			<h3 style="color:#579ACD">Patch Only:</h3>
+			<h3 style="color:#579ACD">GetSimpleCMS-CE v3.3.18.1:</h3>
+			<p><b>Full Package</b> — Based on the original GS 3.3.16 package, but with added compatibility with php 7.4-8.2.</p>
+
+			<h3 style="color:#579ACD">3.3.19 Patch Only:</h3>
 			<p>This will update your current installation, <u>over-writing existing files</u>.</p>
-			<p>v3.3.19: <code>Adds PHP 7.4 - 8.2 compatability to current v3.3.16, as well as additional fixes and many new features.</code></p>
+			<p>v3.3.19: <code>Adds PHP 7.4 - 8.2 compatability to your current version, as well as <u>many modern new features</u> and additional security updates and bug fixes.</code></p>
 			
 			<ul>
 				<li><p><em>You should <b><u>back up your files</u></b> and store them in a safe place.<br> Just in case something goes wrong, you can restore the backup and start again. </em></p></li>
@@ -359,6 +374,13 @@ forcePasteAsPlainText : true
 				</code>
 				</blockquote></li>
 				<li><p><em>Some plugins, themes, language packs may be incompatible with the new version and may need to be updated. It’s recommended to check for related announcements from their authors. </em></p></li>
+			</ul>
+
+			<h3 style="color:#579ACD">3.3.18.1 Patch Only:</h3>
+			<p>This will update your current installation, <u>over-writing existing files</u>.</p>
+			<p>v3.3.18.1: <code>Adds PHP 7.4 - 8.2 compatability to current v3.3.16, as well as additional security updates and bug fixes.</code></p>
+			<ul>
+				<li><p><em>You should <b><u>back up your files</u></b> and store them in a safe place.<br> Just in case something goes wrong, you can restore the backup and start again. </em></p></li>
 			</ul>
 			
 			<h3 style="color:#579ACD">GetSimpleCMS (Legacy)  v3.3.16:</h3>
