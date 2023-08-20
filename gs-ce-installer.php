@@ -33,7 +33,7 @@
 			'GS-CE' => [
 				'tree' => 'GetSimpleCMS-CE ',
 				'name' => 'Get-Simple CMS (v3.3.19)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.19/archive/refs/tags/v3.3.19.zip',
+				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.19/archive/refs/heads/main.zip',
 				'location' => 'admin/install.php'
 			],
 			[
