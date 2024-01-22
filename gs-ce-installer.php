@@ -32,8 +32,8 @@
 		public static $packageInfo = [
 			'GS-CE' => [
 				'tree' => 'GetSimpleCMS-CE ',
-				'name' => 'Get-Simple CMS (v3.3.19)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.19/archive/refs/heads/main.zip',
+				'name' => 'Get-Simple CMS (v3.3.19.1)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.19/archive/refs/heads/3.3.19.1.zip',
 				'location' => 'admin/install.php'
 			],
 			[
@@ -44,8 +44,8 @@
 			],
 			'Patch' => [
 				'tree' => 'Patch Only',
-				'name' => 'Get-Simple CMS (v3.3.19)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.19/archive/refs/heads/main.zip',
+				'name' => 'Get-Simple CMS (v3.3.19.1)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.19/archive/refs/heads/3.3.19.1.zip',
 				'location' => 'admin/'
 			],
 			[
