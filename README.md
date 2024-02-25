@@ -1,5 +1,5 @@
 # GS-CE-Installer
-<img src="https://user-images.githubusercontent.com/119761508/210095438-9136c0e9-b00b-4bd2-bfd5-46e01432239a.png" width="800">
+![image](https://github.com/GetSimpleCMS-CE/GS-CE-Installer/assets/119761508/dfb81340-805d-4be3-8b5e-4d5cee9a51be)
 Single file script to install or update GetSimpleCMS in 1 click
 
 Upload `gs-ce-installer.php` to the root of the server with FTP and select prefered version to load.
