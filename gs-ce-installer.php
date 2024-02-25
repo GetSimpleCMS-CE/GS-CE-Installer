@@ -3,7 +3,7 @@
 	/* **********
 	* Plugin Name: gs-ce-installer
 	* Description: Single file script to install or update GetSimpleCMS in 1 click.
-	* Version: 2.1
+	* Version: 2.2
 	* Author: Islander / Risingisland
 	* Author URI: https://github.com/risingisland
 	********** */
@@ -33,32 +33,20 @@
 			'GS-CE' => [
 				'tree' => 'GetSimpleCMS-CE ',
 				'name' => 'Get-Simple CMS (v3.3.19.1)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.19/archive/refs/heads/3.3.19.1.zip',
+				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-CE/archive/refs/tags/v3.3.19.1b.zip',
 				'location' => 'admin/install.php'
 			],
-			[
-				'tree' => 'GetSimpleCMS-CE ',
-				'name' => 'Get-Simple CMS (v3.3.18.1)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-3.3.18.1/archive/refs/heads/main.zip',
+			'Dev' => [
+				'tree' => 'Dev Branch',
+				'name' => 'Dev Branch (pre-release)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-CE/archive/refs/heads/main.zip',
 				'location' => 'admin/install.php'
 			],
 			'Patch' => [
-				'tree' => 'Patch Only',
-				'name' => 'Get-Simple CMS (v3.3.19.1)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.19/archive/refs/heads/3.3.19.1.zip',
+				'tree' => 'Upgrade Patch',
+				'name' => 'Upgrade to latest Version (v3.3.19.1)',
+				'link' => 'https://github.com/GetSimpleCMS-CE/update-GetSimpleCMS-CE/archive/refs/heads/3.3.19.1.zip',
 				'location' => 'admin/'
-			],
-			[
-				'tree' => 'Patch Only',
-				'name' => 'Get-Simple CMS (v3.3.18.1)',
-				'link' => 'https://github.com/GetSimpleCMS-CE/patch-GS-3.3.18.1/archive/refs/heads/main.zip',
-				'location' => 'admin/'
-			],
-			'GS-Original' => [
-				'tree' => 'GetSimpleCMS (legacy)',
-				'name' => 'Get-Simple CMS (v3.3.16)',
-				'link' => 'https://github.com/GetSimpleCMS/GetSimpleCMS/archive/refs/tags/v3.3.16.zip',
-				'location' => 'admin/install.php'
 			]
 		];
 
@@ -287,7 +275,7 @@
 	<body>
     
     <header>
-		<h1><img style="vertical-align:middle;float:left;width:40px;padding-right:10px;" src="  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAYAAACMGIOFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTFBMzk3MUY3NERCMTFFREEzRjZFQ0RFQzQ5MzQzQkEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTFBMzk3MUU3NERCMTFFREEzRjZFQ0RFQzQ5MzQzQkEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NkZEMUM3MEM3MzJGMTFFREI0MDVEOUMwM0EyQUQzNjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NkZEMUM3MEQ3MzJGMTFFREI0MDVEOUMwM0EyQUQzNjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz69oLqyAAAJkklEQVR42uxb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" > GetSimpleCMS-CE Installer <small style="color:#ccc">v<?= $installer_version ?></small></h1>
+		<h1><img style="vertical-align:middle;float:left;width:40px;padding-right:10px;" src="  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAYAAACMGIOFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTFBMzk3MUY3NERCMTFFREEzRjZFQ0RFQzQ5MzQzQkEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTFBMzk3MUU3NERCMTFFREEzRjZFQ0RFQzQ5MzQzQkEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NkZEMUM3MEM3MzJGMTFFREI0MDVEOUMwM0EyQUQzNjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NkZEMUM3MEQ3MzJGMTFFREI0MDVEOUMwM0EyQUQzNjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz69oLqyAAAJkklEQVR42uxb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" > Single File GetSimpleCMS-CE Installer <small style="color:#ccc">v<?= $installer_version ?></small></h1>
 		
 		<nav>
 			<a href="#home">Start</a>
@@ -295,7 +283,6 @@
 			<a href="#phpinfo">PHP-Info</a>
 			<a href="#help">Help</a>
 		</nav>
-		<a href="https://getsimplecms-ce-plugins.github.io/" target="_blank" class="git-button">Plugins </a>
 		
     </header>
 	
@@ -316,24 +303,20 @@
 			</div>
 			
 			<p>&nbsp </p><hr class="style-two">
-			
-			<p><strong>One file Installer / Updater for GetSimeple CMS.</strong></p>
-			<p>Choose a new installation or update a previouse one.</p>
-			<hr class="style-two">
 
-			<h3 style="color:#579ACD">GetSimpleCMS-CE v3.3.19:</h3>
-			<p><b>Full Package</b> — Not only compatible with php 7.4 - 8.2 but also many new features, responsive admin and base theme, as well as Massive Admin installed by default, offering many new feature and options by default. (user management, theme selection, etc.)</p>
+			<h3 style="color:#579ACD">GetSimpleCMS-CE:</h3>
+			<p>🚀 <b>Full Package</b> — Adds compatability  with php 7.4 - 8.2, as well as many modern new features and additional security updates and bug fixesas, including responsive admin (Massive Admin) and base theme (ResponsiveCE), and offering many new feature and options by default. (user management, theme selection, etc.)</p>
 
-			<h3 style="color:#579ACD">GetSimpleCMS-CE v3.3.18.1:</h3>
-			<p><b>Full Package</b> — Based on the original GS 3.3.16 package, but with added compatibility with php 7.4-8.2.</p>
+			<h3 style="color:#579ACD">Dev Branch:</h3>
+			<p>⚙️ <b>Pre Realease</b> — New improvments and features planned for the next CE release.</p>
 
-			<h3 style="color:#579ACD">3.3.19 Patch Only:</h3>
+			<h3 style="color:#579ACD">Upgrade Patch:</h3>
+			<p>⚠️ GS v3.3.16 or new required.</p>
 			<p>This will update your current installation, <u>over-writing existing files</u>.</p>
-			<p>v3.3.19: <code>Adds PHP 7.4 - 8.2 compatability to your current version, as well as <u>many modern new features</u> and additional security updates and bug fixes.</code></p>
 			
 			<ul>
 				<li><p><em>You should <b><u>back up your files</u></b> and store them in a safe place.<br> Just in case something goes wrong, you can restore the backup and start again. </em></p></li>
-				<li><p>Updating from versions prior to v3.3.19 will need to manually update your <em>gsconfig.php</em> file with the following:</p>
+				<li><p>Updating from versions prior to v3.3.19 will need to manually update your <em style="color:orange">gsconfig.php</em> file with the following:</p>
 				<xblockquote>
 				<p>Add:</p>
 				<code class="language-php">
@@ -375,16 +358,6 @@ forcePasteAsPlainText : true
 				</blockquote></li>
 				<li><p><em>Some plugins, themes, language packs may be incompatible with the new version and may need to be updated. It’s recommended to check for related announcements from their authors. </em></p></li>
 			</ul>
-
-			<h3 style="color:#579ACD">3.3.18.1 Patch Only:</h3>
-			<p>This will update your current installation, <u>over-writing existing files</u>.</p>
-			<p>v3.3.18.1: <code>Adds PHP 7.4 - 8.2 compatability to current v3.3.16, as well as additional security updates and bug fixes.</code></p>
-			<ul>
-				<li><p><em>You should <b><u>back up your files</u></b> and store them in a safe place.<br> Just in case something goes wrong, you can restore the backup and start again. </em></p></li>
-			</ul>
-			
-			<h3 style="color:#579ACD">GetSimpleCMS (Legacy)  v3.3.16:</h3>
-			<p>Full Package — Vanilla isstallation directly from the original "https://github.com/GetSimpleCMS/" repo.</p>
 			
 			<?php echo $footer; ?>
 		</section> 
@@ -393,7 +366,7 @@ forcePasteAsPlainText : true
 		---- PAGE  ----
 		----------- -->
       
-		<section id="require" style="min-height: 250vh"> <hr class="style-one">
+		<section id="require" style="min-height: 500vh"> <hr class="style-one">
 		
 			<?php
 				$error = false;
@@ -526,9 +499,8 @@ forcePasteAsPlainText : true
 			<h2>PHP Info:</h2>
 			
 			<style type="text/css">
-				#phpinfo pre{margin:0;font-family:monospace}#phpinfo a[href*="//"]::after{content:""}#phpinfo a:link{color:#009;text-decoration:none;background-color:#fff}#phpinfo a:hover{text-decoration:underline}#phpinfo table{border-collapse:collapse;border:0;width:934px;box-shadow:1px 2px 3px #ccc}#phpinfo .center{text-align:center}#phpinfo .center table{margin:1em auto;text-align:left}#phpinfo .center th{text-align:center!important}#phpinfo td,th{border:1px solid #666;font-size:75%;vertical-align:baseline;padding:4px 5px}#phpinfo h1{font-size:150%}#phpinfo h2{font-size:125%}#phpinfo .p{text-align:left}#phpinfo .e{background-color:#ccf;width:300px;font-weight:700}#phpinfo .h{background-color:#99c;font-weight:700}#phpinfo .v{background-color:#ddd;max-width:300px;overflow-x:auto;word-wrap:break-word}#phpinfo .v i{color:#999}#phpinfo img{float:right;border:0}#phpinfo hr{width:934px;background-color:#ccc;border:0;height:1px;}ul li.li-spacer::marker {
-  content: "";
-}
+				#phpinfo pre{margin:0;font-family:monospace}#phpinfo a[href*="//"]::after{content:""}#phpinfo a:link{color:#009;text-decoration:none;background-color:#fff}#phpinfo a:hover{text-decoration:underline}#phpinfo table{border-collapse:collapse;border:0;width:934px;box-shadow:1px 2px 3px #ccc}#phpinfo .center{text-align:center}#phpinfo .center table{margin:1em auto;text-align:left}#phpinfo .center th{text-align:center!important}#phpinfo td,th{border:1px solid #666;font-size:75%;vertical-align:baseline;padding:4px 5px}#phpinfo h1{font-size:150%}#phpinfo h2{font-size:125%}#phpinfo .p{text-align:left}#phpinfo .e{background-color:#ccf;width:300px;font-weight:700}#phpinfo .h{background-color:#99c;font-weight:700}#phpinfo .v{background-color:#ddd;max-width:300px;overflow-x:auto;word-wrap:break-word}#phpinfo .v i{color:#999}#phpinfo img{float:right;border:0}#phpinfo hr{width:934px;background-color:#ccc;border:0;height:1px;}ul li.li-spacer::marker {content: "";}
+				a[href*="//"].paypal::after {content: "";}
 			</style>
 			
 			<div id="phpinfo">
@@ -546,7 +518,7 @@ forcePasteAsPlainText : true
 			<?php echo $footer; ?>
 		</section>
 	  
-		<section id="help" style="min-height: 250vh"> <hr class="style-one">
+		<section id="help" style="min-height: 500vh"> <hr class="style-one">
 
 			<article>
 				<h2>Contributing</h2>
@@ -558,12 +530,16 @@ forcePasteAsPlainText : true
 				<h2>Links of Importance</h2>
 				<ul>
 					<li>
-						<a href="https://github.com/GetSimpleCMS-CE?tab=repositories" target="_blank" rel="noopener">GetSimple CMS CE Repo</a>
-						<label for="CE-Repo">ℹ️</label><input type="checkbox" id="CE-Repo"><small>GetSimple CMS CE Packages & Patches</small>
+						<a href="https://getsimple-ce.ovh/" target="_blank" rel="noopener">GetSimple CMS CE Home Page</a>
+						<label for="CE-Repo">ℹ️</label><input type="checkbox" id="CE-Repo"><small>Info, news, plugins and themes.</small>
 					</li>
 					<li>
-						<a href="https://getsimplecms-ce-plugins.github.io/" target="_blank" rel="noopener">GetSimple CMS CE Plugins</a>
-						<label for="CE-Plugins">ℹ️</label><input type="checkbox" id="CE-Plugins"><small>php8.x compatible plugins.</small>
+						<a href="https://github.com/GetSimpleCMS-CE/GetSimpleCMS-CE" target="_blank" rel="noopener">GetSimple CMS CE Repo</a>
+						<label for="CE-Repo">ℹ️</label><input type="checkbox" id="CE-Repo"><small>GetSimple CMS CE Realeses.</small>
+					</li>
+					<li>
+						<a href="https://getsimple-ce.ovh/ce-plugins/" target="_blank" rel="noopener">GetSimple CMS CE Plugins</a>
+						<label for="CE-Plugins">ℹ️</label><input type="checkbox" id="CE-Plugins"><small>Growing list of php8.x compatible plugins.</small>
 					</li>
 					<li>
 						<a href="https://discord.gg/EyjWNYTZG7" target="_blank" rel="noopener">GetSimple CMS CE Discord</a>
@@ -592,14 +568,9 @@ forcePasteAsPlainText : true
 				<h2>Help us help you...</h2>
 				
 				<blockquote>
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" xstyle="box-sizing:border-box;display:grid; width:100%;grid-template-columns:1fr auto; padding:10px;background:#fafafa;border:solid 1px #ddd;margin-top:20px;">
-						<p style="padding: 20px;">A small amount of gratitude goes a long ways for our time and efforts. <br>
-						If you find our updates, plugins and help useful, consider buying us a coffee ☕ </p>
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="KFZ9MCBUKB7GL">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" border="0">
-						<img alt="" src="https://www.paypal.com/en_PL/i/scr/pixel.gif" width="1" height="1" border="0">
-					</form>
+					<p style="padding: 20px;">A small amount of gratitude goes a long ways for our time and efforts.<br>
+					If you find our updates, plugins and help useful, consider buying us a coffee ☕ </p>
+					<p><a href="https://www.paypal.com/donate/?hosted_button_id=C3FTNQ78HH8BE" target="_blank" class="paypal"><img alt="PayPal" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"></a></p>
 				</blockquote>
 			
 			</article>  
