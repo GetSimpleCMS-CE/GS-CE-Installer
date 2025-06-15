@@ -3,7 +3,7 @@
 	/* **********
 	* Plugin Name: gs-ce-installer
 	* Description: Single file script to install or update GetSimpleCMS in 1 click.
-	* Version: 2.4
+	* Version: 2.5
 	* Author: Islander / Risingisland
 	* Author URI: https://github.com/risingisland
 	********** */
