@@ -25,7 +25,7 @@ if (defined('LOCALHOST_BYPASS')) {
 set_time_limit(0);
 ini_set('max_execution_time', 0);
 
-$installer_version = '2.4';
+$installer_version = '2.5';
 $default = 'Full';
 
 if (extension_loaded('xdebug')) {
@@ -41,15 +41,15 @@ header('Content-Type: text/html; charset=utf-8');
 class Installer{
     public static $packageInfo = [
         'Full' => [
-            'tree' => 'Get-Simple CMS CE v3.3.21',
+            'tree' => 'Get-Simple CMS CE v3.3.22',
             'name' => 'New Installation',
-            'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-CE/archive/refs/tags/v3.3.21.zip',
+            'link' => 'https://github.com/GetSimpleCMS-CE/GetSimpleCMS-CE/archive/refs/tags/v3.3.22.zip',
             'location' => 'admin/install.php'
         ],
         'Upgrade' => [
-            'tree' => 'Get-Simple CMS CE v3.3.21 Upgrade',
+            'tree' => 'Get-Simple CMS CE v3.3.22 Upgrade',
             'name' => 'Upgrade Only',
-            'link' => 'https://github.com/GetSimpleCMS-CE/update-GetSimpleCMS-CE/archive/refs/heads/3.3.21.zip',
+            'link' => 'https://github.com/GetSimpleCMS-CE/update-GetSimpleCMS-CE/archive/refs/heads/3.3.22.zip',
             'location' => 'admin/install.php'
         ],
         'Dev' => [
