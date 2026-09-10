@@ -1,8 +1,8 @@
 # GS-CE-Installer
 
-Single file script to install or update GetSimpleCMS in 2 clicks
+Single file script to install or update GetSimpleCMS in 2 clicks.
 
-![image](https://github.com/GetSimpleCMS-CE/GS-CE-Installer/assets/119761508/dfb81340-805d-4be3-8b5e-4d5cee9a51be)
+<img width="1200" alt="image" src="https://github.com/user-attachments/assets/734d8853-58c9-48de-990e-f9e248ce87dc" />
 
 ## Instructions
 - Upload the `install.php` file to your `/www/` directory via FTP.
